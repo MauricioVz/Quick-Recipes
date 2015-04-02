@@ -39,17 +39,19 @@
             <div class="account-wall">
                 <img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
                     alt="">
-                <p class="profile-name">Bhaumik Patel</p>
-                <span class="profile-email">example@gmail.com</span>
+                <p class="profile-name">Mauricio Veladquez</p>
+                <span class="profile-email">mao9317@gmail.com</span>
                 <form class="form-signin">
                 <input type="text" class="form-control" placeholder="Usuario" required autofocus>
+                <br>
                 <input type="password" class="form-control" placeholder="Password">
                 <button class="btn btn-lg btn-primary btn-block" type="submit">
                     Sign in</button>
-                <a href="#" class="need-help">Need help? </a><span class="clearfix"></span>
+               
                 </form>
+                <a href="registrarse.php" class="text-center new-account">Aun no tienes una cuenta?</a>
             </div>
-            <a href="#" class="text-center new-account">Sign in with a different account</a>
+            
         </div>
     </div>
 </div>
