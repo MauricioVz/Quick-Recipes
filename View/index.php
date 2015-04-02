@@ -10,18 +10,17 @@
     <title>PANEL DE CONTROL</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
     <!--external css-->
-    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="assets/css/zabuto_calendar.css">
-    <link rel="stylesheet" type="text/css" href="assets/js/gritter/css/jquery.gritter.css" />
-    <link rel="stylesheet" type="text/css" href="assets/lineicons/style.css">    
-    
+    <link href="../assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../assets/js/gritter/css/jquery.gritter.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/lineicons/style.css">    
+     <link rel="stylesheet" type="text/css" href="../assets/css/zabuto_calendar.css">
     <!-- Custom styles for this template -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/style-responsive.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/style-responsive.css" rel="stylesheet">
 
-    <script src="assets/js/chart-master/Chart.js"></script>
+    <script src="../assets/js/chart-master/Chart.js"></script>
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -62,7 +61,7 @@
               <!-- sidebar menu start-->
               <ul class="sidebar-menu" id="nav-accordion">
               
-              	  <p class="centered"><a href="profile.html"><img src="assets/img/Quick-Recipes.jpg"  width="60" class="img-circle"></a></p>
+              	  <p class="centered"><a href="profile.html"><img src="../assets/img/Quick-Recipes.jpg"  width="60" class="img-circle"></a></p>
               	  <h5 class="centered">Quick Recipes</h5>
               	  	
                   <li class="mt">
@@ -119,7 +118,7 @@
                   <div class="col-sm-6 col-xs-6"></div>
                             </div>
                             <div class="centered">
-                    <img src="assets/img/pescao.png"  width="120">
+                    <img src="../assets/img/pescao.png"  width="120">
                             </div>
                           </div>
                           </a>
@@ -139,7 +138,7 @@
 									<div class="col-sm-6 col-xs-6"></div>
 	                      		</div>
 	                      		<div class="centered">
-										<img src="assets/img/pizza.png" width="120">
+										<img src="../assets/img/pizza.png" width="120">
 	                      		</div>
                       		</div>
                           </a>
@@ -258,45 +257,25 @@
   </section>
 
     <!-- js placed at the end of the document so the pages load faster -->
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/jquery-1.8.3.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
-    <script src="assets/js/jquery.scrollTo.min.js"></script>
-    <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
-    <script src="assets/js/jquery.sparkline.js"></script>
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/jquery-1.8.3.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="../assets/js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="../assets/js/jquery.scrollTo.min.js"></script>
+    <script src="../assets/js/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="../assets/js/jquery.sparkline.js"></script>
 
 
     <!--common script for all pages-->
-    <script src="assets/js/common-scripts.js"></script>
+    <script src="../assets/js/common-scripts.js"></script>
     
-    <script type="text/javascript" src="assets/js/gritter/js/jquery.gritter.js"></script>
-    <script type="text/javascript" src="assets/js/gritter-conf.js"></script>
+    <script type="text/javascript" src="../assets/js/gritter/js/jquery.gritter.js"></script>
+    <script type="text/javascript" src="../assets/js/gritter-conf.js"></script>
 
     <!--script for this page-->
-    <script src="assets/js/sparkline-chart.js"></script>    
-	<script src="assets/js/zabuto_calendar.js"></script>	
+    <script src="../assets/js/sparkline-chart.js"></script>    
+	<script src="../assets/js/zabuto_calendar.js"></script>	
 	
-	<script type="text/javascript">
-        $(document).ready(function () {
-        var unique_id = $.gritter.add({
-            // (string | mandatory) the heading of the notification
-            title: 'Welcome to Dashgum!',
-            // (string | mandatory) the text inside the notification
-            text: 'Hover me to enable the Close Button. You can hide the left sidebar clicking on the button next to the logo. Free version for <a href="http://blacktie.co" target="_blank" style="color:#ffd777">BlackTie.co</a>.',
-            // (string | optional) the image to display on the left
-            image: 'assets/img/ui-sam.jpg',
-            // (bool | optional) if you want it to fade out on its own or just sit there
-            sticky: true,
-            // (int | optional) the time you want it to be alive for before fading out
-            time: '',
-            // (string | optional) the class name you want to apply to that specific message
-            class_name: 'my-sticky-class'
-        });
-
-        return false;
-        });
-	</script>
 	
 	<script type="application/javascript">
         $(document).ready(function () {
