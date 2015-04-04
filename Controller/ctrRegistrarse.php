@@ -30,6 +30,7 @@
 		    $mensaje = "Registro satisfactorio";
 		    print "<script>alert('$mensaje')</script>";
 		    echo "Registro Exitoso";
+		    header("location: ctrLogin.php");
 		}elseif ($_POST['id_usuario']=$id_usuario) {
 		    print "<script>alert('Identificacion ya existe')</script>";
 

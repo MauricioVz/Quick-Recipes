@@ -49,20 +49,33 @@
 						$sth = $this->db->prepare($sql);
 						$sth->execute(array(':id_usuario' =>  $this->__GET("id_usuario"),
 							':password' => $this->__GET("password")));
-
+							
 						if ($sth->rowCount()==1) {
-							header("location: ../Controller/ctrIndex.php");				}
+							return $sth->fetchAll();
+							/*if ($usuario['rol']==1) {
+								header("location: ../Controller/ctrIndex.php");	
+							}else if ($usuario['rol']==2) {
+								header("location: ../Controller/ctrRegistrarse.php");	
+							}else{
+								echo"ERROR";
+							}*/
+										
 				}else{
 					echo"Usuario o contraseña incorrecta";
 				}
 			
 		}
 
-
-
-
+	}
+	public function read(){
+		$sql = 'SELECT id_usuario, primer_nombre, segundo_nombre,
+		primer_apellido, segundo_apellido, email, password FROM tbl_usuarios';
+		$sth = $this->db->prepare($sql);
+		$sth->execute();
+		return $sth->fetchAll();	
 	}
 
+}
 
 	
 

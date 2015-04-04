@@ -77,10 +77,22 @@
                           <span>Recetas</span>
                       </a>
                       <ul class="sub">
-                          <li><a  href="general.html">Ver</a></li>
-                          <li><a  href="form_component.html">Crear </a></li>
-                          <li><a  href="form_component.html">Modificar </a></li>
-                          <li><a  href="form_component.html">Clasificacion </a></li>
+                          <li><a  href="ctrRecetas.php">Ver</a></li>
+                          <li><a  href="#">Crear </a></li>
+                          <li><a  href="#">Modificar </a></li>
+                          <li><a  href="#">Clasificacion </a></li>
+                      </ul>
+                  </li>
+                                    <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cutlery"></i>
+                          <span>Ingredientes</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="ctrIngredientes.php">Ver</a></li>
+                          <li><a  href="#">Crear </a></li>
+                          <li><a  href="#">Modificar </a></li>
+                          <li><a  href="#">Clasificacion </a></li>
                       </ul>
                   </li>
 
@@ -126,7 +138,7 @@
                       	
 
                       	<div class="col-md-4 col-sm-4 mb">
-                          <a href="recetas.php">
+                          <a href="ctrRecetas.php">
                       		<div class="white-panel pn">
                       			<div class="white-header">
 						  			<h5>Top Recetas</h5>
@@ -146,7 +158,7 @@
                       	
 						<div class="col-md-4 col-sm-4 mb">
 							<!-- WHITE PANEL - TOP USER -->
-                <a href="usuarios.php">
+                <a href="ctrUsuario.php">
 							<div class="white-panel pn">
 								<div class="white-header">
 									<h5>Usuarios</h5>
