@@ -7,7 +7,7 @@
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>Ingresar</title>
+    <title>Registrarse</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
@@ -33,51 +33,40 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-4 col-md-offset-4 well well-sm">
-            <legend><a href="http://www.jquery2dotnet.com"><i class="glyphicon glyphicon-globe"></i></a> Sign up!</legend>
+            <legend class="text-center"><i class="glyphicon glyphicon-globe"></i>Registrarse</legend>
             <form action="#" method="post" class="form" role="form">
+              <input class="form-control" id="id_usuario" name="id_usuario" placeholder="Identificacion" type="text" required autofocus/>
+              <br>
             <div class="row">
                 <div class="col-xs-6 col-md-6">
-                    <input class="form-control" name="firstname" placeholder="First Name" type="text"
+                    <input class="form-control" id="primer_nombre" name="primer_nombre" placeholder="Primer Nombre" type="text"
+                         />
+                </div>
+                <div class="col-xs-6 col-md-6">
+                    <input class="form-control" id="segundo_nombre" name="segundo_nombre" placeholder="Segundo Nombre" type="text" required />
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-xs-6 col-md-6">
+                    <input class="form-control" id="primer_apellido" name="primer_apellido" placeholder="Primer Apellido" type="text"
                         required autofocus />
                 </div>
                 <div class="col-xs-6 col-md-6">
-                    <input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
+                    <input class="form-control" id="segundo_apellido" name="segundo_apellido" placeholder="Segundo Apellido" type="text" required />
                 </div>
             </div>
-            <input class="form-control" name="youremail" placeholder="Your Email" type="email" />
-            <input class="form-control" name="reenteremail" placeholder="Re-enter Email" type="email" />
-            <input class="form-control" name="password" placeholder="New Password" type="password" />
-            <label for="">
-                Birth Date</label>
-            <div class="row">
-                <div class="col-xs-4 col-md-4">
-                    <select class="form-control">
-                        <option value="Month">Month</option>
-                    </select>
-                </div>
-                <div class="col-xs-4 col-md-4">
-                    <select class="form-control">
-                        <option value="Day">Day</option>
-                    </select>
-                </div>
-                <div class="col-xs-4 col-md-4">
-                    <select class="form-control">
-                        <option value="Year">Year</option>
-                    </select>
-                </div>
-            </div>
-            <label class="radio-inline">
-                <input type="radio" name="sex" id="inlineCheckbox1" value="male" />
-                Male
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="sex" id="inlineCheckbox2" value="female" />
-                Female
-            </label>
+            <br>
+            <input class="form-control" id="email" name="email" placeholder="Correo Electronico" type="email" />
+            <br>
+            <input class="form-control"  id="password" name="password" placeholder="Contraseña" type="password" />
+            <br>
+             <input class="form-control"  id="rol" name="rol" placeholder="Rol" type="text" />
+         
             <br />
             <br />
-            <button class="btn btn-lg btn-primary btn-block" type="submit">
-                Sign up</button>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" name="action" value="registrar">
+                Registrar</button>
             </form>
         </div>
     </div>

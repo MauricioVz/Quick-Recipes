@@ -41,15 +41,15 @@
                     alt="">
                 <p class="profile-name">Mauricio Veladquez</p>
                 <span class="profile-email">mao9317@gmail.com</span>
-                <form class="form-signin">
-                <input type="text" class="form-control" placeholder="Usuario" required autofocus>
+                <form class="form-signin" method="post">
+                <input type="text" class="form-control" name="user" placeholder="Usuario" required autofocus>
                 <br>
-                <input type="password" class="form-control" placeholder="Password">
-                <button class="btn btn-lg btn-primary btn-block" type="submit">
+                <input type="password" class="form-control" name="pass" placeholder="Password">
+                <button class="btn btn-lg btn-primary btn-block" type="submit" name="action">
                     Sign in</button>
                
                 </form>
-                <a href="registrarse.php" class="text-center new-account">Aun no tienes una cuenta?</a>
+                <a href="../Controller/ctrRegistrarse.php" class="text-center new-account">Aun no tienes una cuenta?</a>
             </div>
             
         </div>
