@@ -61,7 +61,7 @@
             <br>
             <input class="form-control"  id="password" name="password" placeholder="Contraseña" type="password" />
             <br>
-             <input class="form-control"  id="rol" name="rol" placeholder="Rol" type="text" />
+             <input class="form-control"  id="rol" name="rol" placeholder="Rol" type="hidden" value="2" />
          
             <br />
             <br />

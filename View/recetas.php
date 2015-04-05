@@ -41,15 +41,17 @@
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
             <!--logo start-->
-            <a href="index.html" class="logo"><b>Quick Recipes</b></a>
+            <a href="ctrRecetas.php" class="logo"><b>Quick Recipes</b></a>
             <!--logo end-->
     
             <div class="top-menu">
               <ul class="nav pull-right top-menu">
-                  <form name="formulario"method="POST"action='<?php echo $_SERVER['PHP_SELF']; ?>' >
-                    <input type="hidden" name="cerrar">
-                    <button  type="submit" name="cerrar" class="logout">Cerrar sessi&oacute;n</button>
-                  </form>
+                <li>
+                   <form name="formulario"method="POST"action='<?php echo $_SERVER['PHP_SELF']; ?>' >
+                      <input type="hidden" name="cerrar">
+                      <button  type="submit" name="cerrar" class="logout">Cerrar sessi&oacute;n</button>
+                    </form>
+                  </li>
               </ul>
             </div>
         </header>
@@ -64,11 +66,11 @@
               <!-- sidebar menu start-->
               <ul class="sidebar-menu" id="nav-accordion">
               
-                  <p class="centered"><a href="profile.html"><img src="../assets/img/Quick-Recipes.jpg"  width="60" class="img-circle"></a></p>
+                  <p class="centered"><a href="ctrRecetas.php"><img src="../assets/img/Quick-Recipes.jpg"  width="60" class="img-circle"></a></p>
                   <h5 class="centered">Quick Recipes</h5>
                     
                   <li class="mt">
-                      <a class="active" href="index.html">
+                      <a class="active" href="ctrIndex.php">
                           <i class="fa fa-dashboard"></i>
                           <span>Panel de control</span>
                       </a>
@@ -459,7 +461,7 @@
       <!--footer start-->
       <footer class="site-footer">
           <div class="text-center">
-              2014 - Alvarez.is
+              2015 - Quick-Recipes
               <a href="panels.html#" class="go-top">
                   <i class="fa fa-angle-up"></i>
               </a>

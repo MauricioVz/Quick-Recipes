@@ -75,6 +75,13 @@
 		return $sth->fetchAll();	
 	}
 
+	public function delete(){
+			$sql ='DELETE FROM tbl_usuarios WHERE id_usuario = :id_usuario';
+			$sth = $this->db->prepare($sql);
+			$sth->execute(array(':id_usuario' =>  $this->__GET("id_usuario")));
+			return $sth;
+	}
+
 }
 
 	

@@ -41,12 +41,17 @@
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
             <!--logo start-->
-            <a href="index.html" class="logo"><b>Quick Recipes</b></a>
+            <a href="ctrIndex.php" class="logo"><b>Quick Recipes</b></a>
             <!--logo end-->
     
             <div class="top-menu">
             	<ul class="nav pull-right top-menu">
-                    <li><a class="logout" href="ctrLogin.php">Logout</a></li>
+                <li>
+                                     <form name="formulario"method="POST"action='<?php echo $_SERVER['PHP_SELF']; ?>' >
+                    <input type="hidden" name="cerrar">
+                    <button  type="submit" name="cerrar" class="logout">Cerrar sessi&oacute;n</button>
+                  </form>
+                  </li>
             	</ul>
             </div>
         </header>
@@ -56,16 +61,16 @@
       MAIN SIDEBAR MENU
       *********************************************************************************************************************************************************** -->
       <!--sidebar start-->
-      <aside>
-          <div id="sidebar"  class="nav-collapse ">
+      <aside class="">
+          <div id="sidebar"  class="nav-collapse menu-lateral">
               <!-- sidebar menu start-->
               <ul class="sidebar-menu" id="nav-accordion">
               
-              	  <p class="centered"><a href="profile.html"><img src="../assets/img/Quick-Recipes.jpg"  width="60" class="img-circle"></a></p>
+              	  <p class="centered"><a href="ctrIndex.php"><img src="../assets/img/Quick-Recipes.jpg"  width="60" class="img-circle"></a></p>
               	  <h5 class="centered">Quick Recipes</h5>
               	  	
                   <li class="mt">
-                      <a class="active" href="index.html">
+                      <a class="active" href="ctrIndex.php">
                           <i class="fa fa-dashboard"></i>
                           <span>Panel de control</span>
                       </a>

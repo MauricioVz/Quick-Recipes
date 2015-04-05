@@ -39,14 +39,13 @@
             <div class="account-wall">
                 <img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
                     alt="">
-                <p class="profile-name">Mauricio Veladquez</p>
-                <span class="profile-email">mao9317@gmail.com</span>
+               
                 <form class="form-signin" method="post">
                 <input type="text" class="form-control" name="user" placeholder="Usuario" required autofocus>
                 <br>
-                <input type="password" class="form-control" name="pass" placeholder="Password">
+                <input type="password" class="form-control" name="pass" placeholder="Contraseña">
                 <button class="btn btn-lg btn-primary btn-block" type="submit" name="action">
-                    Sign in</button>
+                    Ingresar</button>
                
                 </form>
                 <a href="../Controller/ctrRegistrarse.php" class="text-center new-account">Aun no tienes una cuenta?</a>

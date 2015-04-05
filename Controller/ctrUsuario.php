@@ -8,6 +8,12 @@
 		header("location: ctrLogin.php");
 	}
 
+		if (isset($_POST['cerrar'])) {
+		session_start();
+		session_destroy();
+		header('location: ctrLogin.php');
+	}
+
 	$tabla="";
 	$id_usuario="";
 	$primer_nombre="";
@@ -40,6 +46,16 @@
                     );
 }
 
+	if(isset($_GET["id_usuario"])!=NULL){
+          
+			$id_usuario=$_GET["id_usuario"];
+            $modelUser = new modelUsuario();
+            $modelUser->__SET($id_usuario,"id_usuario");
+          	$modelUser->delete();
+          	header("location: ctrUsuario.php");
+          	
+           
+        }
 
 	include "../View/usuario.php";
 
