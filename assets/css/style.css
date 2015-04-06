@@ -206,7 +206,7 @@ hr {
 /*Exclusive Theme Colors Configuration*/
 
 .label-theme {
-	background-color: #68dff0;
+	background-color:#00FA9A;
 }
 
 .bg-theme {
@@ -232,7 +232,7 @@ ul.top-menu > li > .logout {
     width: 210px;
     height: 100%;
     position: fixed;
-    background: red;
+    background: #C0C0C0;
 }
 
 #sidebar h5 {
@@ -295,7 +295,8 @@ ul.sidebar-menu {
 }
 
 ul.sidebar-menu li ul.sub li{
-    background: #424a5d;
+    background: white;
+
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
@@ -320,7 +321,7 @@ ul.sidebar-menu li ul.sub li a {
 }
 
 ul.sidebar-menu li ul.sub li a:hover {
-	color: white;
+	color: #00FA9A;
 	background: transparent;
 }
 
@@ -350,7 +351,7 @@ ul.sidebar-menu li a span{
 }
 
 ul.sidebar-menu li a{
-    color: #aeb2b7;
+    color: gray;
     text-decoration: none;
     display: block;
     padding: 15px 0 15px 10px;
@@ -364,7 +365,7 @@ ul.sidebar-menu li a{
 }
 
 ul.sidebar-menu li a.active, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
-    background: #68dff0;
+    background: #00FA9A;
     color: #fff;
     display: block;
 
@@ -413,7 +414,7 @@ ul.sidebar-menu li a.active i {
 }
 
 .black-bg {
-    background: #ffd777;
+    background: #00FA9A;
     border-bottom: 1px solid #c9aa5f;
 }
 
@@ -781,7 +782,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 	line-height: 60px;
 	height: 60px;
 	margin: 0;
-	background: #ff865c;
+	background:#00FA9A;
 	text-align: center;
 }
 
@@ -2216,7 +2217,7 @@ label {
 
 /*footer*/
 .site-footer {
-    background: #68dff0;
+    background:#00FA9A;
     color: #fff;
     padding: 10px 0;
 }

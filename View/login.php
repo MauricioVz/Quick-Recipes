@@ -44,11 +44,11 @@
                 <input type="text" class="form-control" name="user" placeholder="Usuario" required autofocus>
                 <br>
                 <input type="password" class="form-control" name="pass" placeholder="Contraseña">
-                <button class="btn btn-lg btn-primary btn-block" type="submit" name="action">
+                <button class="btn btn-lg btn-primary btn-block" type="submit" name="action" style="background:#00FA9A; border-color:#00FA9A" >
                     Ingresar</button>
                
                 </form>
-                <a href="../Controller/ctrRegistrarse.php" class="text-center new-account">Aun no tienes una cuenta?</a>
+                <a href="../Controller/ctrRegistrarse.php" class="text-center new-account" style="color:#00FA9A" >Aun no tienes una cuenta?</a>
             </div>
             
         </div>

@@ -47,7 +47,7 @@
                   <li>
                    <form name="formulario"method="POST"action='<?php echo $_SERVER['PHP_SELF']; ?>' >
                       <input type="hidden" name="cerrar">
-                      <button  type="submit" name="cerrar" class="logout">Cerrar sessi&oacute;n</button>
+                      <button type="submit" class="btn btn-default" name="cerrar" id="btn-cerrar">Cerrar sessi&oacute;n</button>
                     </form>
                   </li>
               </ul>
@@ -152,7 +152,7 @@
       <footer class="site-footer">
           <div class="text-center">
               2015 - Quick-Recipes
-              <a href="basic_table.html#" class="go-top">
+              <a href="ctrUsuario.php#" class="go-top">
                   <i class="fa fa-angle-up"></i>
               </a>
           </div>

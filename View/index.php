@@ -19,7 +19,7 @@
     <!-- Custom styles for this template -->
     <link href="../assets/css/style.css" rel="stylesheet">
     <link href="../assets/css/style-responsive.css" rel="stylesheet">
-
+    <link href="../assets/css/MyStyle.css" rel="stylesheet" />
     <script src="../assets/js/chart-master/Chart.js"></script>
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -41,7 +41,7 @@
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
             <!--logo start-->
-            <a href="ctrIndex.php" class="logo"><b>Quick Recipes</b></a>
+            <a href="ctrIndex.php" class="logo"><b  >Quick Recipes</b></a>
             <!--logo end-->
     
             <div class="top-menu">
@@ -49,7 +49,7 @@
                 <li>
                                      <form name="formulario"method="POST"action='<?php echo $_SERVER['PHP_SELF']; ?>' >
                     <input type="hidden" name="cerrar">
-                    <button  type="submit" name="cerrar" class="logout">Cerrar sessi&oacute;n</button>
+                    <button type="submit" class="btn btn-default" name="cerrar" id="btn-cerrar">Cerrar sessi&oacute;n</button>
                   </form>
                   </li>
             	</ul>
@@ -61,13 +61,13 @@
       MAIN SIDEBAR MENU
       *********************************************************************************************************************************************************** -->
       <!--sidebar start-->
-      <aside class="">
-          <div id="sidebar"  class="nav-collapse menu-lateral">
+      <aside >
+          <div id="sidebar"  class="nav-collapse ">
               <!-- sidebar menu start-->
               <ul class="sidebar-menu" id="nav-accordion">
               
               	  <p class="centered"><a href="ctrIndex.php"><img src="../assets/img/Quick-Recipes.jpg"  width="60" class="img-circle"></a></p>
-              	  <h5 class="centered">Quick Recipes</h5>
+              	  <h5 class="centered" >Quick Recipes</h5>
               	  	
                   <li class="mt">
                       <a class="active" href="ctrIndex.php">
@@ -130,7 +130,7 @@
                             </div>
                 <div class="row">
                   <div class="col-sm-6 col-xs-6 goleft">
-                    <p><i class="fa fa-heart"></i> 122</p>
+                    <p><i class="fa fa-cubes" id="color-font-icon"></i>122</p>
                   </div>
                   <div class="col-sm-6 col-xs-6"></div>
                             </div>
@@ -150,7 +150,7 @@
                       			</div>
 								<div class="row">
 									<div class="col-sm-6 col-xs-6 goleft">
-										<p><i class="fa fa-cutlery"></i> 25</p>
+										<p><i class="fa fa-cutlery" id="color-font-icon"></i> 25</p>
 									</div>
 									<div class="col-sm-6 col-xs-6"></div>
 	                      		</div>
@@ -186,15 +186,15 @@
                       	
            
                     </div><!-- /row -->
- <hr>
+
             <div class="col-lg-3 ds">
                     <!--Notificaciones-->
             <h3>NOTIFICACIONES</h3>
                                         
                       <!-- First Action -->
                       <div class="desc">
-                        <div class="thumb">
-                          <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+                        <div class="thumb" id="color-font-icon">
+                          <span class="badge bg-theme"><i class="fa fa-users"></i></span>
                         </div>
                         <div class="details">
                           <p><muted>Hace 2 Minutos</muted><br/>
@@ -205,7 +205,7 @@
                       <!-- Second Action -->
                       <div class="desc">
                         <div class="thumb">
-                          <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+                          <span class="badge bg-theme"><i class="fa fa-users"></i></span>
                         </div>
                         <div class="details">
                           <p><muted>Hace 3 Horas</muted><br/>
@@ -216,7 +216,7 @@
                       <!-- Third Action -->
                       <div class="desc">
                         <div class="thumb">
-                          <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+                          <span class="badge bg-theme"><i class="fa fa-users"></i></span>
                         </div>
                         <div class="details">
                           <p><muted>Hace 7 Horas</muted><br/>
@@ -238,7 +238,7 @@
                       <!-- Fifth Action -->
                       <div class="desc">
                         <div class="thumb">
-                          <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+                          <span class="badge bg-theme"><i class="fa fa-users"></i></span>
                         </div>
                         <div class="details">
                           <p><muted>Hace 18 horas</muted><br/>
@@ -265,7 +265,7 @@
       <footer class="site-footer">
           <div class="text-center">
               2015 -Quick Recipes
-              <a href="index.html#" class="go-top">
+              <a href="ctrIndex.php#" class="go-top">
                   <i class="fa fa-angle-up"></i>
               </a>
           </div>

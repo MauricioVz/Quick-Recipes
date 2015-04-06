@@ -2,8 +2,8 @@
 
 	define("DRIVER", "mysql");
 	define("PORT", "3306");
-	define("SERVER", "localhost");
-	define("DBNAME", "bd_recetas");
-	define("USER", "root");
+	define("SERVER", "mysql.nixiweb.com");
+	define("DBNAME", "u857820495_recet");
+	define("USER", "u857820495_root");
 	define("PASSWORD", "elcarro");
  ?>

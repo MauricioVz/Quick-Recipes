@@ -33,7 +33,7 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-4 col-md-offset-4 well well-sm">
-            <legend class="text-center"><i class="glyphicon glyphicon-globe"></i>Registrarse</legend>
+            <legend class="text-center"><i class="glyphicons glyphicons-user-add"></i>Registrarse</legend>
             <form action="#" method="post" class="form" role="form">
               <input class="form-control" id="id_usuario" name="id_usuario" placeholder="Identificacion" type="text" required autofocus/>
               <br>
@@ -65,7 +65,7 @@
          
             <br />
             <br />
-            <button class="btn btn-lg btn-primary btn-block" type="submit" name="action" value="registrar">
+            <button class="btn btn-lg btn-primary btn-block" type="submit" name="action" value="registrar" style="background:#00FA9A; border-color:#00FA9A">
                 Registrar</button>
             </form>
         </div>

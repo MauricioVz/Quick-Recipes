@@ -92,3 +92,12 @@
 .menu-lateral{
     background-color: red;
 }
+
+#btn-cerrar{
+    margin-top: 11px;
+    color: gray;
+    border-color: black;
+}
+#color-font-icon{
+    color:#00FA9A;
+}

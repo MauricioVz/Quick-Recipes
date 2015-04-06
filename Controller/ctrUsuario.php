@@ -42,7 +42,7 @@
                     $value["segundo_apellido"],
                     $value["email"],
                     $value["password"],
-                    "<a href='ctrUsuario.php?id_usuario=".$value["id_usuario"]."'><button class='btn btn-danger btn-xs'><i class='fa fa-trash-o '></i></button></a>"
+                    "<a href='ctrUsuario.php?id_usuario=".$value["id_usuario"]."'><button class='btn btn-danger btn-xs'><i class='fa fa-trash-o ' ></i></button></a>"
                     );
 }
 
