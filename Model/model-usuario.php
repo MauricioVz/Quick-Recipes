@@ -52,13 +52,7 @@
 							
 						if ($sth->rowCount()==1) {
 							return $sth->fetchAll();
-							/*if ($usuario['rol']==1) {
-								header("location: ../Controller/ctrIndex.php");	
-							}else if ($usuario['rol']==2) {
-								header("location: ../Controller/ctrRegistrarse.php");	
-							}else{
-								echo"ERROR";
-							}*/
+
 										
 				}else{
 					echo"Usuario o contraseña incorrecta";
