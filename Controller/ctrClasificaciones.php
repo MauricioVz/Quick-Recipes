@@ -43,6 +43,51 @@
 		}
     }
 
+    $tabla="";
+    $id_categoria="";
+    $nombre_categoria="";
+    $descripcion="";
+
+    $modClasificacion = new ModelClasificacion();
+    foreach($modClasificacion->read() as $value){
+    $tabla .= sprintf("<tr>
+                            <td>%s</td>
+                            <td>%s</td>
+                            <td>%s</td>
+                            <td>%s</td>
+                            <td>%s</td>
+                        </tr>",
+                    $value["id_categoria"],
+                    $value["nombre_categoria"],
+                    $value["descripcion"],
+                    "<a href='ctrClasificaciones.php?id_categoria=".$value["id_categoria"]."'><button class='btn btn-danger btn-xs'><i class='fa fa-trash-o ' ></i></button></a>",
+                    "<a href='ctrClasificaciones.php?id_categoriam=".$value["id_categoria"]."'><button class='btn btn btn-info btn-xs'><i class='fa fa-pencil-square-o ' ></i></button></a>"
+                    );
+        }
+
+    function update()
+{
+    $id_categoria=$_POST['id_categoria'];
+    $nombre_categoria=$_POST['nombre_categoria'];
+    $descripcion=$_POST['descripcion'];
+
+
+    $modClasificacion = new ModelClasificacion();
+
+    $modClasificacion->__SET($id_categoria,"id_categoria");
+    $modClasificacion->__SET($nombre_categoria,"nombre_categoria");
+    $modClasificacion->__SET($descripcion,"descripcion");
+
+
+ if ($modClasificacion->update()) {
+    $mensaje = "Modificacion satisfactoria";
+    print "<script>alert('$mensaje')</script>";
+
+}else{
+     print "<script>alert('Error de conexion')</script>";
+    }
+}
+
     if (isset($_GET["id_categoria"])) {
 
     	$id_categoria=$_GET["id_categoria"];
@@ -52,7 +97,20 @@
     	header("location: ctrClasificaciones.php");
     }
 
-	
+            $btnedit="<input type='submit' name='action' value='Modificar' disabled='true'>";
+            $btnsave="<input type='submit' id='registra' name='action'  value='registrar' >";
+	    if(isset($_GET["id_categoriam"])!=NULL){
+            $btnedit="<input type='submit' name='action' value='Modificar'>";
+            $btnsave="<input type='submit' id='registra' name='action'  value='registrar' disabled='true'>";
+            $id_categoria= $_GET["id_categoriam"];
+
+            $modClasificacion = new ModelClasificacion();
+            $modClasificacion->__SET("id_categoria", $id_categoria);
+            foreach($modClasificacion->find() as $value){
+            $nombre_categoria = $value["nombre_categoria"];
+            $descripcion = $value["descripcion"];
+            }
+        }
 
 
    
@@ -76,26 +134,7 @@
 	}
 }
 
-   
-	$tabla="";
-	$id_categoria="";
-	$nombre_categoria="";
-	$primer_apellido="";
 
-    $modClasificacion = new ModelClasificacion();
-    foreach($modClasificacion->read() as $value){
-    $tabla .= sprintf("<tr>
-    						<td>%s</td>
-	    					<td>%s</td>
-	    					<td>%s</td>
-	    					<td>%s</td>
-	    				</tr>",
-                    $value["id_categoria"],
-                    $value["nombre_categoria"],
-                    $value["descripcion"],
-                    "<a href='ctrClasificaciones.php?id_categoria=".$value["id_categoria"]."'><button class='btn btn-danger btn-xs'><i class='fa fa-trash-o ' ></i></button></a>"
-                    );
-		}
 
 
 	include "../View/clasificaciones.php";

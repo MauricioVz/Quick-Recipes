@@ -97,7 +97,6 @@
                           <li><a  href="ctrIngredientes.php">Ver</a></li>
                           <li><a  href="#">Crear </a></li>
                           <li><a  href="#">Modificar </a></li>
-                          <li><a  href="#">Clasificacion </a></li>
                       </ul>
                   </li>
 
@@ -123,7 +122,7 @@
                       <div class="row mt">
                       
                         <div class="col-md-4 col-sm-4 mb">
-                          <a href="ingredientes.php">
+                          <a href="ctrIngredientes.php">
                           <div class="white-panel pn">
                             <div class="white-header">
                     <h5>Ingredientes</h5>
