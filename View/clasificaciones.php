@@ -121,7 +121,7 @@
               <div class="col-lg-12">
                 <div class="form-panel">
                       <h4 class="mb"><i class="fa fa-angle-right"></i>Registrar Clasificacion</h4>
-                      <form class="form-inline" role="form" method="post">
+                      <form class="form-inline" method="post" class="form" role="form">
                           <div class="form-group">
                               <label class="sr-only" for="id_categoria">Identificador</label>
                               <input type="text" class="form-control" name="id_categoria" placeholder="Identificador">
@@ -134,14 +134,14 @@
                               <label class="sr-only" for="descripcion">Descripcion</label>
                               <input type="text" class="form-control" name="descripcion" placeholder="Descripcion">
                           </div>
-                          <button type="submit" class="btn btn-theme">registrar</button>
+                         
+                           <button type="submit" class="btn btn-default" name="action" style="background:#00FA9A; color:white" value="registrar">Registrar</button>
                       </form>
                 </div><!-- /form-panel -->
               </div><!-- /col-lg-12 -->
             </div><!-- /row -->
-          <section class="wrapper">
-          	<h3><i class="fa fa-angle-right"></i> Basic Table Examples</h3>
-
+          <section class="wrapper" style="background:#00FA9A" >
+          
               <div class="row mt">
                   <div class="col-md-12">
                       <div class="content-panel">
@@ -150,14 +150,9 @@
 	                  	  	  <hr>
                               <thead>
                               <tr>
-                                  <th></i>Identificacion</th>
-                                  <th></i>Primer Nombre</th>
-
-                                  <th>Primer Apellido</th>
-                                  <th>Segundo Apellido</th>
-                                  <th>Email</th>
-                                  <th>Password</th>
-                                  <th>Opciones</th>
+                                  <th></i>Identificador</th>
+                                  <th></i>Nombre</th>
+                                  <th>Descripcion</th>
                               </tr>
                               </thead>
                               <tbody>

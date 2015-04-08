@@ -33,17 +33,16 @@
 
 	
 	public function read(){
-		$sql = 'SELECT id_usuario, primer_nombre, segundo_nombre,
-		primer_apellido, segundo_apellido, email, password FROM tbl_usuarios';
+		$sql = 'SELECT id_categoria, nombre_categoria, descripcion FROM tbl_categorias_recetas';
 		$sth = $this->db->prepare($sql);
 		$sth->execute();
 		return $sth->fetchAll();	
 	}
 
 	public function delete(){
-			$sql ='DELETE FROM tbl_usuarios WHERE id_usuario = :id_usuario';
+			$sql ='DELETE FROM tbl_categorias_recetas WHERE id_categoria = :id_categoria';
 			$sth = $this->db->prepare($sql);
-			$sth->execute(array(':id_usuario' =>  $this->__GET("id_usuario")));
+			$sth->execute(array(':id_categoria' =>  $this->__GET("id_categoria")));
 			return $sth;
 	}
 
