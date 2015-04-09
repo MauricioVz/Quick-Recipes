@@ -7,7 +7,7 @@
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>Clasificacion</title>
+    <title>Categoria de recetas</title>
 
      <!-- Bootstrap core CSS -->
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
@@ -115,12 +115,12 @@
      
 
       <section id="main-content">
-           <h1>Clasificacion de recetas</h1>
+           <h1>Categoria de recetas</h1>
         <!-- INLINE FORM ELELEMNTS -->
             <div class="row mt">
               <div class="col-lg-12">
                 <div class="form-panel">
-                      <h4 class="mb"><i class="fa fa-angle-right"></i>Registrar Clasificacion</h4>
+                      <h4 class="mb"><i class="fa fa-angle-right"></i>Registrar Categoria</h4>
                       <form class="form-inline" method="post" class="form" role="form">
                           <div class="form-group">
                               <label class="sr-only" for="id_categoria">Identificador</label>
@@ -136,6 +136,7 @@
                           </div>
                          
                            <button type="submit" class="btn btn-default" name="action" style="background:#00FA9A; color:white" value="registrar">Registrar</button>
+                           <button type="submit" class="btn btn-default" name="action" style="background:#00FA9A; color:white" value="Modificar">Modificar</button>
                       </form>
                 </div><!-- /form-panel -->
               </div><!-- /col-lg-12 -->

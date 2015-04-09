@@ -97,6 +97,7 @@
                           <li><a  href="ctrIngredientes.php">Ver</a></li>
                           <li><a  href="#">Crear </a></li>
                           <li><a  href="#">Modificar </a></li>
+                          <li><a  href="ctrTipoIngredientes.php">Clasificacion </a></li>
                       </ul>
                   </li>
 

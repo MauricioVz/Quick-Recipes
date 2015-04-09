@@ -115,27 +115,28 @@
      
 
       <section id="main-content">
-           <h1>Clasificacion de recetas</h1>
+           <h1>Clasificacion de Ingredientes</h1>
         <!-- INLINE FORM ELELEMNTS -->
             <div class="row mt">
               <div class="col-lg-12">
                 <div class="form-panel">
-                      <h4 class="mb"><i class="fa fa-angle-right"></i>Registrar Clasificacion</h4>
+                      <h4 class="mb"><i class="fa fa-angle-right"></i>Registrar Clasificacion de ingrediente</h4>
                       <form class="form-inline" method="post" class="form" role="form">
                           <div class="form-group">
                               <label class="sr-only" for="id_categoria">Identificador</label>
-                              <input type="text" class="form-control" name="id_categoria" placeholder="Identificador" value="<?php echo $id_categoria;?>">
+                              <input type="text" class="form-control" name="id_clase" placeholder="Identificador" value="<?php echo $id_clase;?>">
                           </div>
                           <div class="form-group">
                               <label class="sr-only" for="nombre_categoria">Nombre</label>
-                              <input type="text" class="form-control" name="nombre_categoria" placeholder="Nombre" value="<?php echo $nombre_categoria;?>">
+                              <input type="text" class="form-control" name="nombre_clase" placeholder="Nombre" value="<?php echo $nombre_clase;?>">
                           </div>
                            <div class="form-group">
                               <label class="sr-only" for="descripcion">Descripcion</label>
                               <input type="text" class="form-control" name="descripcion" placeholder="Descripcion" value="<?php echo $descripcion;?>">
                           </div>
-                         
+
                            <button type="submit" class="btn btn-default" name="action" style="background:#00FA9A; color:white" value="registrar">Registrar</button>
+                           <button type="submit" class="btn btn-default" name="action" style="background:#00FA9A; color:white" value="Modificar">Modificar</button>
                       </form>
                 </div><!-- /form-panel -->
               </div><!-- /col-lg-12 -->
@@ -146,7 +147,7 @@
                   <div class="col-md-12">
                       <div class="content-panel">
                           <table class="table table-striped table-advance table-hover">
-	                  	  	  <h4><i class="fa fa-angle-right"></i> Usuarios del sistema</h4>
+	                  	  	  <h4><i class="fa fa-angle-right"></i>Administracion de ingredientes</h4>
 	                  	  	  <hr>
                               <thead>
                               <tr>

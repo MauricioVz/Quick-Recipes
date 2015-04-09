@@ -126,7 +126,7 @@
     }else if ($action == "Modificar") {
         if (isset($_POST['id_categoria'])!=null && isset($_POST['nombre_categoria'])!=null && isset($_POST['descripcion'])!=null) {
             update();
-          
+            $_GET["id_categoriam"]="";
         }else{
             $mensaje = "Llenar todos los campos por favor";
             print "<script>alert('$mensaje')</script>";
