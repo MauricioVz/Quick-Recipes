@@ -142,7 +142,11 @@
                           </div>
                           <div class="form-group">
                               <label class="sr-only" for="clasificacion">Clasificacion</label>
-                              <input type="text" class="form-control" name="clasificacion" placeholder="Clasificacion" value="<?php echo $clasificacion;?>">
+                              <select class="form-control">
+                                <option>Tipo</option>
+                                <?php                                   
+                                echo $tipoIngrediente; ?>
+                              </select>
                           </div>
                          <br>
                          <br>

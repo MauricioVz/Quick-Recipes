@@ -2,7 +2,7 @@
 	require "../Config/config.php";
 	require "../Library/database.php";
 	require "../Model/model-ingredientes.php";
-
+    require "../Model/model-tipo-ingredientes.php";
 
 	     session_start();
 	if ($_SESSION["rol"]!=1) {
@@ -47,13 +47,23 @@
 		}
     }
 
+        $id_clase="";
+        $nombre_clase="";
+        $tipoIngrediente="";
+        $modTipoIngrediente = new ModelTipoIngredientes();
+        foreach($modTipoIngrediente->read() as $value){
+            $tipoIngrediente .= sprintf("<option value='%s'>%s</option>",
+                $value["id_clase"],
+                $value["nombre_clase"]);
+        }
+   
+
     $tabla="";
     $id_ingrediente="";
     $nombre_ingrediente="";
     $descripcion="";
     $clasificacion="";
     $id_ingredientem="";
-
     $modIngrediente = new ModelIngredientes();
     foreach($modIngrediente->read() as $value){
     $tabla .= sprintf("<tr>
