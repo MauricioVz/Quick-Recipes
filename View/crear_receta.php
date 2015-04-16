@@ -7,7 +7,7 @@
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>PANEL DE CONTROL</title>
+    <title>Crear Receta</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
@@ -83,7 +83,7 @@
                       </a>
                       <ul class="sub">
                           <li><a  href="ctrRecetas.php">Ver</a></li>
-                          <li><a  href="ctrCrearReceta.php">Crear </a></li>
+                          <li><a  href="#">Crear </a></li>
                           <li><a  href="#">Modificar </a></li>
                           <li><a  href="ctrClasificaciones.php">Clasificacion </a></li>
                       </ul>
@@ -95,7 +95,7 @@
                       </a>
                       <ul class="sub">
                           <li><a  href="ctrIngredientes.php">Ver</a></li>
-                          <li><a  href="#">Crear </a></li>
+                          <li><a  href="ctrCrearReceta.php">Crear </a></li>
                           <li><a  href="#">Modificar </a></li>
                           <li><a  href="ctrTipoIngredientes.php">Clasificacion </a></li>
                       </ul>
@@ -114,143 +114,91 @@
       MAIN CONTENT
       *********************************************************************************************************************************************************** -->
       <!--main content start-->
-      <section id="main-content">                 
-                      <div class="row">
-                        <div class="col-md-12" style="height:80px">
-                        </div>
 
-                      </div>
-                      <div class="row mt">
-                      
-                        <div class="col-md-4 col-sm-4 mb">
-                          <a href="ctrIngredientes.php">
-                          <div class="white-panel pn">
-                            <div class="white-header">
-                    <h5>Ingredientes</h5>
-                            </div>
-                <div class="row">
-                  <div class="col-sm-6 col-xs-6 goleft">
-                    <p><i class="fa fa-cubes" id="color-font-icon"></i>122</p>
-                  </div>
-                  <div class="col-sm-6 col-xs-6"></div>
-                            </div>
-                            <div class="centered">
-                    <img src="../assets/img/pescao.png"  width="120">
-                            </div>
-                          </div>
-                          </a>
-                        </div><!-- /col-md-4 -->
-                      	
-
-                      	<div class="col-md-4 col-sm-4 mb">
-                          <a href="ctrRecetas.php">
-                      		<div class="white-panel pn">
-                      			<div class="white-header">
-						  			<h5>Top Recetas</h5>
-                      			</div>
-								<div class="row">
-									<div class="col-sm-6 col-xs-6 goleft">
-										<p><i class="fa fa-cutlery" id="color-font-icon"></i> 25</p>
-									</div>
-									<div class="col-sm-6 col-xs-6"></div>
-	                      		</div>
-	                      		<div class="centered">
-										<img src="../assets/img/pizza.png" width="120">
-	                      		</div>
-                      		</div>
-                          </a>
-                      	</div><!-- /col-md-4 -->
-                      	
-						<div class="col-md-4 col-sm-4 mb">
-							<!-- WHITE PANEL - TOP USER -->
-                <a href="ctrUsuario.php">
-							<div class="white-panel pn">
-								<div class="white-header">
-									<h5>Usuarios</h5>
-								</div>
-								<p><img border=0 src="http://www.computerclipart.com/computer_clipart_images/black_and_white_chef_icon_0521-1004-1319-2654_TN.jpg" alt="Computer Clipart Images"></p>
-								<p><b>Super O</b></p>
-								<div class="row">
-									<div class="col-md-6 col-sm-6 mb">
-										<p class="small mt">Miembro desde</p>
-										<p>2012</p>
-									</div>
-									<div class="col-md-6 col-sm-6 mb">
-										<p class="small mt">Recetas creadas</p>
-										<p>15</p>
-									</div>
-								</div>
-							</div>
-              </a>
-						</div><!-- /col-md-4 -->
-                      	
-           
-                    </div><!-- /row -->
-
-            <div class="col-lg-3 ds">
-                    <!--Notificaciones-->
-            <h3>NOTIFICACIONES</h3>
-                                        
-                      <!-- First Action -->
-                      <div class="desc">
-                        <div class="thumb" id="color-font-icon">
-                          <span class="badge bg-theme"><i class="fa fa-users"></i></span>
-                        </div>
-                        <div class="details">
-                          <p><muted>Hace 2 Minutos</muted><br/>
-                             <a href="#">James Brown</a> se ha registrado<br/>
-                          </p>
-                        </div>
-                      </div>
-                      <!-- Second Action -->
-                      <div class="desc">
-                        <div class="thumb">
-                          <span class="badge bg-theme"><i class="fa fa-users"></i></span>
-                        </div>
-                        <div class="details">
-                          <p><muted>Hace 3 Horas</muted><br/>
-                             <a href="#">Diana Kennedy</a> ha creado una receta<br/>
-                          </p>
-                        </div>
-                      </div>
-                      <!-- Third Action -->
-                      <div class="desc">
-                        <div class="thumb">
-                          <span class="badge bg-theme"><i class="fa fa-users"></i></span>
-                        </div>
-                        <div class="details">
-                          <p><muted>Hace 7 Horas</muted><br/>
-                             <a href="#">Brandon Page</a> ha modificado una receta<br/>
-                          </p>
-                        </div>
-                      </div>
-                      <!-- Fourth Action -->
-                      <div class="desc">
-                        <div class="thumb">
-                          <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
-                        </div>
-                        <div class="details">
-                          <p><muted>Hace 11 horas</muted><br/>
-                             <a href="#">Mark Twain</a> Ha comentado una receta<br/>
-                          </p>
-                        </div>
-                      </div>
-                      <!-- Fifth Action -->
-                      <div class="desc">
-                        <div class="thumb">
-                          <span class="badge bg-theme"><i class="fa fa-users"></i></span>
-                        </div>
-                        <div class="details">
-                          <p><muted>Hace 18 horas</muted><br/>
-                             <a href="#">Daniel Pratt</a> se ha registrado<br/>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-					
+            <section id="main-content">
+           <h1>Ingredientes</h1>
+        <!-- INLINE FORM ELELEMNTS -->
+            <div class="row mt">
+              <div class="col-lg-12">
+                <div class="form-panel">
+                  <center>
+                      <h4 class="mb"><i class="fa fa-angle-right"></i>Registrar Recetas</h4>
                 
-                  
-                  
+                      <form class="form-inline" method="post" class="form" role="form">
+                          <div class="form-group">
+                              <label class="sr-only" for="id_receta">Identificador</label>
+                              <input type="text" class="form-control" name="id_receta" placeholder="Identificador" value="<?php echo $id_receta;?>">
+                          </div>
+                          <div class="form-group">
+                              <label class="sr-only" for="nombre_receta">Nombre</label>
+                              <input type="text" class="form-control" name="nombre_receta" placeholder="Nombre" value="<?php echo $nombre_receta;?>">
+                          </div>
+
+                          <div class="form-group">
+                              <label class="sr-only" for="categoria">Categoria</label>
+                              <select name="categoria"class="form-control">
+                                <option>Categoria</option>
+                                <?php                                   
+                                echo $categoria; ?>
+                              </select>
+                          </div>
+                          <div class="form-group">
+                              <label class="sr-only" for="fec_registro">fec_registro</label>
+                              <input type="hidden" class="form-control" name="fec_registro"  value="<?php echo $fec_registro;?>">
+                          </div>
+                          <div class="form-group">
+                              <label class="sr-only" for="descripcion">Descripcion</label>
+                              <input type="text" class="form-control" name="descripcion" placeholder="descripcion" value="<?php echo $descripcion;?>">
+                          </div>
+                            
+                          <br>
+                              <div class="row mt">
+                      
+                          <div class="form-group">
+                              <label class="sr-only" for="preparacion">Preparacion</label>
+                             <textarea class="form-control" rows="4" name="preparacion" value="preparacion"></textarea>
+                              </div>
+                
+                            </div>
+                         <br>
+                         <br>
+                          <button type="submit" class="btn btn-default" name="action" style="background:#00FA9A; color:white" value="registrar">Registrar</button>
+                           <button type="submit" class="btn btn-default" name="action" style="background:#00FA9A; color:white" value="Modificar">Modificar</button></center>
+
+                      </form>
+                </div><!-- /form-panel -->
+              </div><!-- /col-lg-12 -->
+            </div><!-- /row -->
+          <section class="wrapper" style="background:#00FA9A" >
+          
+              <div class="row mt">
+                  <div class="col-md-12">
+                      <div class="content-panel">
+                          <table class="table table-striped table-advance table-hover">
+                            <h4><i class="fa fa-angle-right"></i> Usuarios del sistema</h4>
+                            <hr>
+                              <thead>
+                              <tr>
+                                  <th></i>Identificador</th>
+                                  <th></i>Nombre</th>
+                                  <th>Descripcion</th>
+                                  <th>Clasificacion</th>
+                              </tr>
+                              </thead>
+                              <tbody>
+
+                                <?php echo $tabla; ?>
+
+                              </tbody>
+                          </table>
+                      </div><!-- /content-panel -->
+                  </div><!-- /col-md-12 -->
+              </div><!-- /row -->
+
+    </section><! --/wrapper -->
+      </section><!-- /MAIN CONTENT -->
+
+
       <!-- **********************************************************************************************************************************************************
       RIGHT SIDEBAR CONTENT
       *********************************************************************************************************************************************************** -->                  
@@ -291,43 +239,9 @@
 
     <!--script for this page-->
     <script src="../assets/js/sparkline-chart.js"></script>    
-	<script src="../assets/js/zabuto_calendar.js"></script>	
+
 	
-	
-	<script type="application/javascript">
-        $(document).ready(function () {
-            $("#date-popover").popover({html: true, trigger: "manual"});
-            $("#date-popover").hide();
-            $("#date-popover").click(function (e) {
-                $(this).hide();
-            });
-        
-            $("#my-calendar").zabuto_calendar({
-                action: function () {
-                    return myDateFunction(this.id, false);
-                },
-                action_nav: function () {
-                    return myNavFunction(this.id);
-                },
-                ajax: {
-                    url: "show_data.php?action=1",
-                    modal: true
-                },
-                legend: [
-                    {type: "text", label: "Special event", badge: "00"},
-                    {type: "block", label: "Regular event", }
-                ]
-            });
-        });
-        
-        
-        function myNavFunction(id) {
-            $("#date-popover").hide();
-            var nav = $("#" + id).data("navigation");
-            var to = $("#" + id).data("to");
-            console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
-        }
-    </script>
+
   
 
   </body>

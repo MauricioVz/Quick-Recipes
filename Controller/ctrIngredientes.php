@@ -47,7 +47,7 @@
 		}
     }
 
-        $id_clase="";
+          $id_clase="";
         $nombre_clase="";
         $tipoIngrediente="";
         $modTipoIngrediente = new ModelTipoIngredientes();

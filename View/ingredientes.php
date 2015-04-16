@@ -95,7 +95,7 @@
                       </a>
                       <ul class="sub">
                           <li><a  href="ctrIngredientes.php">Ver</a></li>
-                          <li><a  href="#">Crear </a></li>
+                          <li><a  href="ctrCrearReceta.php">Crear </a></li>
                           <li><a  href="#">Modificar </a></li>
                           <li><a  href="ctrTipoIngredientes.php">Clasificacion </a></li>
                       </ul>
@@ -142,7 +142,7 @@
                           </div>
                           <div class="form-group">
                               <label class="sr-only" for="clasificacion">Clasificacion</label>
-                              <select class="form-control">
+                              <select name="clasificacion"class="form-control">
                                 <option>Tipo</option>
                                 <?php                                   
                                 echo $tipoIngrediente; ?>

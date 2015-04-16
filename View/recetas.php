@@ -82,7 +82,7 @@
                           <span>Recetas</span>
                       </a>
                       <ul class="sub">
-                          <li><a  href="#">Crear </a></li>
+                          <li><a  href="ctrCrearReceta">Crear </a></li>
                           <li><a  href="#">Modificar </a></li>
                           <li><a  href="#">Clasificacion </a></li>
                       </ul>
@@ -101,6 +101,7 @@
       MAIN CONTENT
       *********************************************************************************************************************************************************** -->
       <!--main content start-->
+      
       <section id="main-content">
           <section class="wrapper site-min-height">
           	<h3><i class="fa fa-angle-right"></i> Crea, Aprende, Disfruta.. Quick Recipes</h3>
