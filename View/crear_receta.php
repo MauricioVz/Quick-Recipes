@@ -95,7 +95,7 @@
                       </a>
                       <ul class="sub">
                           <li><a  href="ctrIngredientes.php">Ver</a></li>
-                          <li><a  href="ctrCrearReceta.php">Crear </a></li>
+                          <li><a  href="ctrIngredientes.php">Crear </a></li>
                           <li><a  href="#">Modificar </a></li>
                           <li><a  href="ctrTipoIngredientes.php">Clasificacion </a></li>
                       </ul>
@@ -123,11 +123,11 @@
                       <form class="form-inline" method="post" class="form" role="form">
                           <div class="form-group">
                               <label class="sr-only" for="id_receta">Identificador</label>
-                              <input type="text" class="form-control" name="id_receta" placeholder="Identificador" value="<?php echo $id_receta;?>">
+                              <input type="text" class="form-control" name="id_receta" placeholder="Identificador" >
                           </div>
                           <div class="form-group">
                               <label class="sr-only" for="nombre_receta">Nombre</label>
-                              <input type="text" class="form-control" name="nombre_receta" placeholder="Nombre" value="<?php echo $nombre_receta;?>">
+                              <input type="text" class="form-control" name="nombre_receta" placeholder="Nombre" >
                           </div>
 
                           <div class="form-group">
@@ -140,31 +140,48 @@
                           </div>
                           <div class="form-group">
                               <label class="sr-only" for="fec_registro">fec_registro</label>
-                              <input type="hidden" class="form-control" name="fec_registro" valuee="1999/05/17" >
+                              <input type="hidden" class="form-control" name="fec_registro" value="1999-05-17" >
                           </div>
                           <div class="form-group">
                               <label class="sr-only" for="descripcion">Descripcion</label>
-                              <input type="text" class="form-control" name="descripcion" placeholder="descripcion" value="<?php echo $descripcion;?>">
+                              <input type="text" class="form-control" name="descripcion" placeholder="descripcion">
                           </div>
                             
                           <br>
                               <div class="row mt">
                       
                           <div class="form-group">
-                              <label class"control-label" for="preparacion">Preparacion</label>
-                             <textarea class="form-control" rows="4" name="preparacion" value="preparacion"></textarea>
+                             <textarea class="form-control" rows="3" name="preparacion" value="preparacion" placeholder="Preparacion"></textarea>
                               </div>
                 
                             </div>
                          <br>
                          <br>
-                          <button type="submit" class="btn btn-default" name="action" style="background:#00FA9A; color:white" value="registrar">Registrar</button>
-                           <button type="submit" class="btn btn-default" name="action" style="background:#00FA9A; color:white" value="Modificar">Modificar</button></center>
+                          <button type="submit" class="btn btn-group btn-group-justified" name="action" style="background:#00FA9A; color:black; font-size:18px" value="registrar">Registrar</button>
+                           </center>
 
                       </form>
                 </div><!-- /form-panel -->
               </div><!-- /col-lg-12 -->
             </div><!-- /row -->
+              <div class="row mt">
+                  <div class="col-md-12">
+                      <div class="content-panel">
+                          <table class="table table-striped table-advance table-hover">
+                            <hr>
+                              <thead>
+                              <tr>
+                                  <th></i>Identificador</th>
+                              </tr>
+                              </thead>
+                              <tbody>
+
+
+                              </tbody>
+                          </table>
+                      </div><!-- /content-panel -->
+                  </div><!-- /col-md-12 -->
+              </div><!-- /row -->
           <section class="wrapper" style="background:#00FA9A" >
           <!--Agregar ingredientes-->
           <div class="row mt">
@@ -181,7 +198,7 @@
                       <br>
                       <div class="col-md-6">
                         <label class="sr-only" for="cantidad">Cantidad</label>
-                        <input type="text" class="form-control" name="cantidad" placeholder="Cantidad" value="<?php echo $cantidad;?>">       
+                        <input type="text" class="form-control" name="cantidad" placeholder="Cantidad" >       
                       </div>
                       <div class="col-md-6">
                         <label class="sr-only" for="unidad_medida">Unidad Medida</label>
@@ -192,7 +209,9 @@
                       </select>
                       <br>
                       </div>
-                    <button type="submit" class="btn btn-default" name="action" style="background:#00FA9A; color:white" value="agregar">Agregar</button>
+                      <center>
+                    <button type="submit" class="btn btn-group btn-group-justified" name="action" style="background:#00FA9A; color:black" value="agregar">Agregar</button>
+                    </center>
                   </form>    
                 </div>
               </div>
@@ -202,30 +221,7 @@
             </div>
           </div>
           
-              <div class="row mt">
-                  <div class="col-md-12">
-                      <div class="content-panel">
-                          <table class="table table-striped table-advance table-hover">
-                            <h4><i class="fa fa-angle-right"></i> Recetas</h4>
-                            <hr>
-                              <thead>
-                              <tr>
-                                  <th></i>Identificador</th>
-                                  <th></i>Nombre</th>
-                                  <th>Descripcion</th>
-                                  <th>Clasificacion</th>
-                              </tr>
-                              </thead>
-                              <tbody>
-
-                                <?php echo $tabla; ?>
-
-                              </tbody>
-                          </table>
-                      </div><!-- /content-panel -->
-                  </div><!-- /col-md-12 -->
-              </div><!-- /row -->
-
+            
     </section><! --/wrapper -->
       </section><!-- /MAIN CONTENT -->
 
