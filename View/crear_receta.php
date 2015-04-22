@@ -99,11 +99,7 @@
                           <li><a  href="#">Modificar </a></li>
                           <li><a  href="ctrTipoIngredientes.php">Clasificacion </a></li>
                       </ul>
-                  </li>
-
-                 
-                
-
+                  </li>    
               </ul>
               <!-- sidebar menu end-->
           </div>
@@ -116,13 +112,13 @@
       <!--main content start-->
 
             <section id="main-content">
-           <h1>Ingredientes</h1>
+<br>
         <!-- INLINE FORM ELELEMNTS -->
             <div class="row mt">
               <div class="col-lg-12">
                 <div class="form-panel">
                   <center>
-                      <h4 class="mb"><i class="fa fa-angle-right"></i>Registrar Recetas</h4>
+                      <h4 class="mb"><i class="fa fa-angle-right"></i>Registrar Receta</h4>
                 
                       <form class="form-inline" method="post" class="form" role="form">
                           <div class="form-group">
@@ -144,7 +140,7 @@
                           </div>
                           <div class="form-group">
                               <label class="sr-only" for="fec_registro">fec_registro</label>
-                              <input type="hidden" class="form-control" name="fec_registro"  value="<?php echo $fec_registro;?>">
+                              <input type="hidden" class="form-control" name="fec_registro" valuee="1999/05/17" >
                           </div>
                           <div class="form-group">
                               <label class="sr-only" for="descripcion">Descripcion</label>
@@ -155,7 +151,7 @@
                               <div class="row mt">
                       
                           <div class="form-group">
-                              <label class="sr-only" for="preparacion">Preparacion</label>
+                              <label class"control-label" for="preparacion">Preparacion</label>
                              <textarea class="form-control" rows="4" name="preparacion" value="preparacion"></textarea>
                               </div>
                 
@@ -170,12 +166,47 @@
               </div><!-- /col-lg-12 -->
             </div><!-- /row -->
           <section class="wrapper" style="background:#00FA9A" >
+          <!--Agregar ingredientes-->
+          <div class="row mt">
+            <div class="col-md-6">
+              <div class="form-panel">
+                <div class="form-group">
+                  <form  method="post" class="form" role="form">
+                    <label class="sr-only" for="ingredientes">Ingredientes</label>
+                      <select name="id_ingredientes"class="form-control">
+                        <option>Ingredientes</option>
+                         <?php                                   
+                        echo $ingredientes; ?>
+                      </select>
+                      <br>
+                      <div class="col-md-6">
+                        <label class="sr-only" for="cantidad">Cantidad</label>
+                        <input type="text" class="form-control" name="cantidad" placeholder="Cantidad" value="<?php echo $cantidad;?>">       
+                      </div>
+                      <div class="col-md-6">
+                        <label class="sr-only" for="unidad_medida">Unidad Medida</label>
+                      <select name="unidad_medida"class="form-control">
+                        <option>Medida</option>
+                         <?php                                   
+                        echo $unidades; ?>
+                      </select>
+                      <br>
+                      </div>
+                    <button type="submit" class="btn btn-default" name="action" style="background:#00FA9A; color:white" value="agregar">Agregar</button>
+                  </form>    
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              
+            </div>
+          </div>
           
               <div class="row mt">
                   <div class="col-md-12">
                       <div class="content-panel">
                           <table class="table table-striped table-advance table-hover">
-                            <h4><i class="fa fa-angle-right"></i> Usuarios del sistema</h4>
+                            <h4><i class="fa fa-angle-right"></i> Recetas</h4>
                             <hr>
                               <thead>
                               <tr>

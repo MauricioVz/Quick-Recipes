@@ -95,7 +95,7 @@
                       </a>
                       <ul class="sub">
                           <li><a  href="ctrIngredientes.php">Ver</a></li>
-                          <li><a  href="ctrCrearReceta.php">Crear </a></li>
+                          <li><a  href="ctrIngredientes.php">Crear </a></li>
                           <li><a  href="#">Modificar </a></li>
                           <li><a  href="ctrTipoIngredientes.php">Clasificacion </a></li>
                       </ul>
@@ -116,7 +116,10 @@
       <!--main content start-->
 
             <section id="main-content">
-           <h1>Ingredientes</h1>
+          <br> 
+          <br>
+          <center><h1>Ingredientes</h1></center> 
+           
         <!-- INLINE FORM ELELEMNTS -->
             <div class="row mt">
               <div class="col-lg-12">
@@ -163,7 +166,7 @@
                   <div class="col-md-12">
                       <div class="content-panel">
                           <table class="table table-striped table-advance table-hover">
-                            <h4><i class="fa fa-angle-right"></i> Usuarios del sistema</h4>
+                            <h4><i class="fa fa-angle-right"></i> Ingredientes registrados en el sistema</h4>
                             <hr>
                               <thead>
                               <tr>

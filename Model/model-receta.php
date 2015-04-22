@@ -9,6 +9,9 @@
 		private $descripcion;
 		private $preparacion;
 		private $usuario;
+		private $id_unidad_medida;
+		private $nombre_unidad;
+		private $abreviatura;
 		private $db;
 
 
@@ -26,7 +29,8 @@
 		}
 
 		public function create(){
-			$sql ='INSERT INTO tbl_recetas (id_receta,nombre_receta,categoria,fec_registro,descripcion,preparacion,usuario) VALUES (:id_receta,:nombre_receta,:categoria,:fec_registro,:descripcion,:preparacion,:usuario)';
+			$sql ='INSERT INTO tbl_recetas (id_receta,nombre_receta,categoria,fec_registro,descripcion,preparacion,usuario) 
+			VALUES (:id_receta,:nombre_receta,:categoria,:fec_registro,:descripcion,:preparacion,:usuario)';
 			
 			$sth = $this->db->prepare($sql);
 			$sth->execute(array(':id_receta' => $this->__GET("id_receta"),
@@ -37,6 +41,22 @@
 					':preparacion'=>$this->__GET("preparacion"),
 					':usuario'=>$this->__GET("usuario")));
 		return $sth;
+		}
+
+		public function AgregarIngrediente(){
+			$sql ='INSERT INTO tbl_ingredientes_recetas (id_receta,id_ingrediente,cantidad,unidad_medida)
+			VALUES(:id_receta,:id_ingrediente,:cantidad,:unidad_medida)';
+			$sth = $this->db->prepare($sql);
+			$sth->execute(array(':id_receta' => $this->__GET("id_receta"),
+				':id_ingrediente'=> $this->__GET("id_ingrediente"),
+				':cantidad'=> $this->__GET("cantidad"),
+				':unidad_medida'=> $this->__GET("unidad_medida")));
+		}
+		public function LeerCantidades(){
+			$sql ='SELECT id_unidad_medida, nombre_unidad,abreviatura FROM tbl_unidades_medidas';
+			$sth = $this->db->prepare($sql);
+			$sth->execute();
+			return $sth->fetchAll();
 		}
 
 	
