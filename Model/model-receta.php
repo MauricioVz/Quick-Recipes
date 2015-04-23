@@ -58,6 +58,16 @@
 			$sth->execute();
 			return $sth->fetchAll();
 		}
+		public function ListarIngredienteXReceta(){
+			$sql='SELECT I.nombre_ingrediente, X.cantidad, U.abreviatura 
+			FROM tbl_ingredientes_recetas X INNER JOIN tbl_ingredientes I
+			ON X.id_ingrediente=I.id_ingrediente INNER JOIN tbl_unidades_medidas U
+			ON X.unidad_medida=U.id_unidad_medida
+			WHERE X.id_receta=:id_receta';
+			$sth = $this->db->prepare($sql);
+			$sth->execute(array(':id_receta' => $this->__GET("id_receta")));
+		return $sth->fetchAll();
+		}
 
 		public function ListarGuiaReceta(){
 			$sql='SELECT R.id_receta,R.nombre_receta,C.nombre_categoria,
@@ -80,11 +90,16 @@
 		}
 
 	public function read(){
-		$sql = 'SELECT id_receta, nombre_receta, categoria,fec_registro,descripcion,preparacion,usuario FROM tbl_recetas';
+		$sql = 'SELECT R.id_receta, R.nombre_receta, C.nombre_categoria, 
+		R.descripcion, U.primer_nombre FROM tbl_recetas R
+		 INNER JOIN tbl_categorias_recetas C
+		 ON R.categoria=C.id_categoria 
+		 INNER JOIN tbl_usuarios U ON R.usuario=U.id_usuario';
 		$sth = $this->db->prepare($sql);
 		$sth->execute();
 		return $sth->fetchAll();	
 	}
+
 		public function find(){
 		$sql = 'SELECT id_receta, nombre_receta, categoria,fec_registro,descripcion,preparacion,usuario FROM tbl_recetas WHERE id_receta = :id_receta';
 		$sth = $this->db->prepare($sql);

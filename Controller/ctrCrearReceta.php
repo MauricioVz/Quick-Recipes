@@ -42,7 +42,7 @@
 		    print "<script>alert('$mensaje')</script>";
 		    echo "Registro Exitoso";
 		    header("location: ctrCrearReceta.php");
-		}elseif ($_POST['id_receta']=$id_receta) {
+		}else if ($_POST['id_receta']==$id_receta) {
 		    print "<script>alert('Identificacion ya existe')</script>";
 
 		}else{
@@ -65,12 +65,60 @@
                  print "<script>alert('$mensaje')</script>";
             
             header("location: ctrCrearReceta.php");
-            }else if ($_POST['id_receta']=$id_receta && $_POST["id_ingredientes"]=$id_ingrediente) {
+            }else if ($_POST['id_receta']==$id_receta && $_POST["id_ingredientes"]==$id_ingrediente) {
             print "<script>alert('Identificacion ya existe')</script>";
 
         }else{
-             print "<script>alert('Error de conexion')</script>";
+             header("location: ctrCrearReceta.php");
              }
+        }
+       if(isset($_SESSION["id_receta"])){
+        $id_receta=$_SESSION["id_receta"];
+       }
+        
+        $nombre_receta="";
+        $nombre_categoria="";
+        $preparacion="";
+        $recetas="";
+        $modReceta =new ModelReceta();
+        if (isset($id_receta)){
+            $modReceta->__SET($id_receta,"id_receta");
+        }
+        
+        foreach ($modReceta->ListarGuiaReceta() as $value) {
+            $recetas.= sprintf("<tr>
+                            <td>%s</td>
+                            <td>%s</td>
+                            <td>%s</td>
+                            <td>%s</td>
+                           
+                        </tr>",
+                    $value["id_receta"],
+                    $value["nombre_receta"],
+                    $value["nombre_categoria"],
+                    $value["preparacion"]);
+        }
+        //Listar ingredientes a medida que se van agregando
+         if(isset($_SESSION["id_receta"])){
+        $id_receta=$_SESSION["id_receta"];
+       }
+        $nombre_ingrediente="";
+        $cantidad="";
+        $nombre_unidad="";
+        $tbingredientes="";
+        $modReceta =new ModelReceta();
+         if (isset($id_receta)){
+            $modReceta->__SET($id_receta,"id_receta");
+        }
+        foreach ($modReceta->MostrarIngredientesAgregados() as $value) {
+            $tbingredientes.= sprintf("<tr>
+                                        <td>%s</td>
+                                        <td>%s</td>
+                                        <td>%s</td>  
+                                    </tr>",
+                    $value["nombre_ingrediente"],
+                    $value["cantidad"],
+                    $value["nombre_unidad"]);
         }
 //Listar Selects
 	    $id_categoria="";

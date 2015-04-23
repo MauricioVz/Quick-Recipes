@@ -69,7 +69,12 @@
               	  <p class="centered"><a href="ctrIndex.php"><img src="../assets/img/Quick-Recipes.jpg"  width="60" class="img-circle"></a></p>
               	  <h5 class="centered" >Quick Recipes</h5>
               	  	
-
+                  <li class="mt">
+                      <a class="active" href="ctrIndex.php">
+                          <i class="fa fa-dashboard"></i>
+                          <span>Panel de control</span>
+                      </a>
+                  </li>
 
                   <li class="sub-menu">
                       <a href="javascript:;" >
@@ -83,7 +88,18 @@
                           <li><a  href="ctrClasificaciones.php">Clasificacion </a></li>
                       </ul>
                   </li>
-                 
+                                    <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cutlery"></i>
+                          <span>Ingredientes</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="ctrIngredientes.php">Ver</a></li>
+                          <li><a  href="ctrIngredientes.php">Crear </a></li>
+                          <li><a  href="#">Modificar </a></li>
+                          <li><a  href="ctrTipoIngredientes.php">Clasificacion </a></li>
+                      </ul>
+                  </li>    
               </ul>
               <!-- sidebar menu end-->
           </div>
@@ -94,45 +110,46 @@
       MAIN CONTENT
       *********************************************************************************************************************************************************** -->
       <!--main content start-->
-      <br>
       <section id="main-content">
-          <section class="wrapper site-min-height">
-          	<h3><i class="fa fa-angle-right"></i> Crea, Aprende, Disfruta... Quick Recipes</h3>
-          	<div class="row mt">
-			  		<div class="col-lg-12">
-                      <div class="content-panel">
-                      <h4>Recetas</h4>
-                          <section id="unseen">
-                            <table class="table table-bordered table-striped table-condensed">
+        <section class="wrapper" style="background:#00FA9A" >
+          <div class="col-md-8"><br>
+            <div class="content-panel">
+                          <table class="table table-striped table-advance table-hover">
+                           
+                            <hr>
                               <thead>
                               <tr>
-                                  <th>Identificador</th>
-                                  <th>Nombre</th>
-                                  <th>Categoria</th>
-                                  <th>Descripcion</th>
-                                  <th>Usuario</th>
-                                  <th>Opcion</th>
+                                  <th></i>Ingrediente</th>
+                                  <th></i>Cantidad</th>
+                                  <th>Medida</th>
+               
                               </tr>
                               </thead>
                               <tbody>
-                              <?php echo $recetas; ?>
+
+                                <?php echo $ingredientes; ?>
+
                               </tbody>
                           </table>
-                          </section>
-		
-		  	</div><!-- /row -->
-          		</div>
-          	</div>
-		</section>
-            
+                      </div>
+          </div>
+          <div class="col-md-4"><br>
+            <label>Preparacion</label>
+            <textarea class="form-control" rows="10" placeholder="<?php echo $preparacion; ?>" disabled ></textarea>
+          </div>
+
+        </div>
+      </section>
+     </section>
+
       <!-- **********************************************************************************************************************************************************
       RIGHT SIDEBAR CONTENT
       *********************************************************************************************************************************************************** -->                  
                   
        
 
-          </section>
-      </section>
+        
+ 
 
       <!--main content end-->
       <!--footer start-->
@@ -172,6 +189,3 @@
 
   </body>
 </html>
-
-
-<!--Nueva PAGINA

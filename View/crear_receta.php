@@ -83,7 +83,7 @@
                       </a>
                       <ul class="sub">
                           <li><a  href="ctrRecetas.php">Ver</a></li>
-                          <li><a  href="#">Crear </a></li>
+                          <li><a  href="ctrCrearReceta.php">Crear </a></li>
                           <li><a  href="#">Modificar </a></li>
                           <li><a  href="ctrClasificaciones.php">Clasificacion </a></li>
                       </ul>
@@ -164,24 +164,31 @@
                 </div><!-- /form-panel -->
               </div><!-- /col-lg-12 -->
             </div><!-- /row -->
+            <div class="container">
               <div class="row mt">
                   <div class="col-md-12">
                       <div class="content-panel">
                           <table class="table table-striped table-advance table-hover">
+                           
                             <hr>
                               <thead>
                               <tr>
                                   <th></i>Identificador</th>
+                                  <th></i>Receta</th>
+                                  <th>Categoria</th>
+                                  <th>Preparacion</th>
                               </tr>
                               </thead>
                               <tbody>
 
+                                <?php echo $recetas; ?>
 
                               </tbody>
                           </table>
                       </div><!-- /content-panel -->
                   </div><!-- /col-md-12 -->
               </div><!-- /row -->
+              </div>
           <section class="wrapper" style="background:#00FA9A" >
           <!--Agregar ingredientes-->
           <div class="row mt">
@@ -217,7 +224,24 @@
               </div>
             </div>
             <div class="col-md-6">
-              
+              <div class="content-panel">
+                          <table class="table table-striped table-advance table-hover">
+                           
+                            <hr>
+                              <thead>
+                              <tr>
+                                  <th></i>Ingrediente</th>
+                                  <th></i>Cantidad</th>
+                                  <th>Medida</th>
+                              </tr>
+                              </thead>
+                              <tbody>
+
+                                <?php echo $tbingredientes; ?>
+
+                              </tbody>
+                          </table>
+                      </div>
             </div>
           </div>
           
