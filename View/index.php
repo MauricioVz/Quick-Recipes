@@ -125,12 +125,13 @@
                         <div class="col-md-4 col-sm-4 mb">
                           <a href="ctrIngredientes.php">
                           <div class="white-panel pn">
-                            <div class="white-header">
+                          <div class="white-header">
                     <h5>Ingredientes</h5>
                             </div>
                 <div class="row">
                   <div class="col-sm-6 col-xs-6 goleft">
-                    <p><i class="fa fa-cubes" id="color-font-icon"></i>122</p>
+                    <p><i class="fa fa-cubes" id="color-font-icon"></i> <?php                                   
+                                echo $NumeroIngredientes; ?></p>
                   </div>
                   <div class="col-sm-6 col-xs-6"></div>
                             </div>
@@ -150,7 +151,7 @@
                       			</div>
 								<div class="row">
 									<div class="col-sm-6 col-xs-6 goleft">
-										<p><i class="fa fa-cutlery" id="color-font-icon"></i> 25</p>
+										<p><i class="fa fa-cutlery" id="color-font-icon"></i><?php echo $NumeroRecetas; ?></p>
 									</div>
 									<div class="col-sm-6 col-xs-6"></div>
 	                      		</div>
@@ -169,7 +170,7 @@
 									<h5>Usuarios</h5>
 								</div>
 								<p><img border=0 src="http://www.computerclipart.com/computer_clipart_images/black_and_white_chef_icon_0521-1004-1319-2654_TN.jpg" alt="Computer Clipart Images"></p>
-								<p><b>Super O</b></p>
+								<p><b><?php echo $_SESSION["nombre"]." ". $_SESSION["apellido"] ?></b></p>
 								<div class="row">
 									<div class="col-md-6 col-sm-6 mb">
 										<p class="small mt">Miembro desde</p>
@@ -177,7 +178,7 @@
 									</div>
 									<div class="col-md-6 col-sm-6 mb">
 										<p class="small mt">Recetas creadas</p>
-										<p>15</p>
+										<?php echo $NumeroRecetasUsuario; ?>
 									</div>
 								</div>
 							</div>

@@ -15,7 +15,7 @@
 		header('location: ctrLogin.php');
 	}
 
-
+    
 	function create(){
 
 	$id_ingrediente=$_POST['id_ingrediente'];

@@ -12,6 +12,8 @@
 		private $id_unidad_medida;
 		private $nombre_unidad;
 		private $abreviatura;
+		private $numero_recetas;
+		private $recetas_de_usuario;
 		private $db;
 
 
@@ -43,6 +45,20 @@
 		return $sth;
 		}
 
+		public function NumeroDeRecetas()
+		{
+			$sql = 'SELECT count(*) AS numero_recetas FROM tbl_recetas;';
+			$sth = $this->db->prepare($sql);
+			$sth->execute();
+			return $sth->fetchAll();
+	    }
+
+	    public function NumeroRecetasUsuario(){
+	    	$sql='SELECT count(*) AS recetas_de_usuario FROM  tbl_recetas where usuario=:usuario';
+			$sth = $this->db->prepare($sql);
+			$sth->execute(array(':usuario' => $this->__GET("usuario")));
+			return $sth->fetchAll();
+	    }
 		public function AgregarIngrediente(){
 			$sql ='INSERT INTO tbl_ingredientes_recetas (id_receta,id_ingrediente,cantidad,unidad_medida)
 			VALUES(:id_receta,:id_ingrediente,:cantidad,:unidad_medida)';
